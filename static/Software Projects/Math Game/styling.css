@@ -1,0 +1,154 @@
+html{
+    height: 100%;
+    background-color: #9499b7;
+}
+
+body{
+    margin: 0px;
+}
+
+#game{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    padding: 10px 0px;
+    width: 100%;
+    background-color: #c5cae9;
+    margin: 125px 0px;
+}
+
+#container{
+    height: 100%;
+    width: 500px;
+    margin: auto;
+    padding: 10px auto;
+    position: relative;
+}
+
+#score{
+    background-color: #edffff;
+    float: left;
+    padding: 10px;
+    color: #89abc6;
+}
+
+#timer{
+    float: right;
+    background-color: #edffff;
+    color: #89abc6;
+    padding: 10px;
+    display: none;
+}
+
+#correct{
+    background-color: palegreen;
+    position: absolute;
+    left: 225px;
+    padding: 12px 15px;
+    display: none;
+}
+
+#wrong{
+    background-color: indianred;
+    position: absolute;
+    left: 225px;
+    padding: 12px;
+    display: none;
+}
+
+#question{
+    height: 175px;
+    width: auto;
+    background-color: #eeffff;
+    margin: 50px auto 0px;
+    border: 3px solid #8aacc8;
+    border-radius: 10px;
+    font-size: 75px;
+    line-height: 175px;
+    text-align: center;
+}
+
+#instructions{
+    height: 50px;
+    width: auto;
+    text-align: center;
+    line-height: 50px;
+    margin: 25px auto;
+    background-color: #8aacc8;
+    color: #eeffff;
+}
+
+#choices{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: auto;
+    justify-content: center;
+}
+
+.box{
+    background-color: #eeffff;
+    width: 85px;
+    height: 85px;
+    margin: auto;
+    border-radius: 5px;
+    border: 3px solid #89abc6;
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+    line-height: 85px;
+    box-shadow: 4px 4px 2px #000000;
+    -moz-box-shadow: 4px 4px 2px #000000;
+    -webkit-box-shadow: 4px 4px 2px #000000;
+    position: relative;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+.box:hover{
+    background-color: #bbdefb;
+}
+.box:active{
+    box-shadow: 0px 0px 0px;
+    -moz-box-shadow: 0px 0px 0px;
+    -webkit-box-shadow: 0px 0px 0px;
+    top: 4px;
+    left: 4px;
+}
+
+#start{
+    width: 100px;
+    background-color: #8aacc8;
+    padding: 10px;
+    text-align: center;
+    margin: 20px auto 0px;
+    cursor: pointer;
+    color: #eeffff
+}
+
+#start:hover{
+    background-color: #baddf9;
+    color: #89abc6;
+}
+
+
+#gameover{
+    height: 87%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    text-align: center;
+    background-color: #ef9a9a;
+    font-size: 45px;    
+    display: none;
+}
+
+#gameover > p{
+    margin: 100px;
+}
+
+

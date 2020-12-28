@@ -1,0 +1,106 @@
+body{
+    background-color: #d0b3b3;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Euphoria Script', cursive;
+}
+#title{
+    height: 200px;
+    width: 700px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 75px;
+    padding: 30px 0px 0px;
+    margin: auto auto;
+}
+#title > img{
+    height: 175px;
+    margin: 0;
+}
+#game{
+    position: relative;
+    text-align: center;
+    height: 464px;
+    width: 700px;
+    background-image: url(images/wood.jpeg);
+    background-position: center;
+    background-size: contain;
+    margin: 0px auto 25px;
+    overflow: hidden;
+    cursor: crosshair;
+}
+.fruit{
+    display: none;
+    position: absolute;
+}
+#icons{
+    position: absolute;
+    height: 30px;
+    width: 700px;
+    margin: 0px auto;
+    padding: 5px
+}
+#livesleft{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 30px;
+    display: none;
+}
+.life{
+    height: 20px;
+    padding: 5px;
+}
+#score{
+    position: absolute;
+    left: 595px;
+    width: 90px;
+    font-size: 25px;
+    text-align: center;
+    background-color: white;
+    padding: 0px auto;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+#startreset{
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    width: 700px;
+    height: 30px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+#startreset:hover{
+    background-color: white;
+    color: #d0b3b3;
+}
+#gameover{
+    height: 250px;
+    width: 500px;
+    position: relative;
+    left: 120px;
+    top: 100px;
+    text-align: center;
+    margin: 0px;
+    display: none;
+}
+#gameover > p{
+    padding-top: 25px;
+    margin: 0px;
+    line-height: 100px;
+    font-size: 75px;
+}
+#instructions{
+    height: 250px;
+    width: 500px;
+    position: relative;
+    left: 125px;
+    top: 100px;
+    padding-top: 75px;
+    text-align: center;
+    font-size: 45px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Audio Player</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale= 1, user-scalable=yes">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <header>
+    </header>
+    <div id="main">
+        <img id="notes" src="images/notes.png">
+
+        <div id="songoptions">
+            <div id="BigBandJazz" class="songs">
+                Big Band Jazz
+            </div>
+            <div id="HipHop" class="songs">
+                Hip Hop
+            </div>
+            <div id="GuitarandBass" class="songs">
+                Guitar and Bass
+            </div>
+            <div id="Country" class="songs">
+                Country
+            </div>
+            <div id="TrueHeavyMetal" class="songs">
+                True Heavy Metal
+            </div>
+            <div id="UpbeatSynthBass" class="songs">
+                Upbeat Synth/Bass
+            </div>
+            <div id="CoolBeats" class="songs">
+                Cool Beats
+            </div>
+            <div id="DanceTrack" class="songs">
+                Dance Track
+            </div>
+        </div>
+        <audio id="track">
+            <source src="">
+            <source src="">  
+        </audio>
+        <div id="player">
+            <div id="startstop">
+                <img id="play" src="images/play.png">
+                <img id="pause" src="images/pause.png">
+            </div>
+            <div id="progressbar">
+                <div id="time">
+                    <span id="minutes">00</span>:<span id="seconds">00</span>
+                </div>
+                <div id="mybarborder"></div>
+                <div id="mybar"></div>
+                <span id="duration">00:00</span>
+            </div>
+            <div id="volume">
+
+            </div>
+        </div>
+        <div id="random">
+            Play Random Audio
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="code.js"></script>
+</body>
+</html>

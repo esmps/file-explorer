@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fruit Slicer!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale= 1, user-scalable=yes">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="title">
+            <img src="images/title.png">
+        </div>
+        <div id="game">
+            <div id="icons">
+                <div id="livesleft"></div>
+                <div id="score">
+                    Score: <span id="scorevalue">0</span>
+                </div>
+            </div>
+            <img id="fruit1" class="fruit">
+            <div id="gameover">
+                <p>Game Over! <br/> Your score is <span id="finalscore">0</span>.</p>
+            </div>
+            <div id="instructions">
+                Instructions: Swipe over (without clicking) as many fruits as you can. But... watch out for bombs!
+            </div>
+        </div>
+        <div id="startreset">
+            Start Game
+        </div>
+        <audio id="sliceaudio">
+            <source src="audio/slice.mp3">
+            <source src="audio/slice.ogg">
+        </audio>
+        <audio id="bombaudio">
+            <source src="audio/bomb.mp3">
+            <source src="audio/bomb.ogg">
+        </audio>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="jquery.js"></script>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: RGB(214, 193, 230);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+#header{
+    height: 10vh;
+}
+#header > img{
+    height: 10vh;
+    padding: 10px 0 0 10px;
+}
+
+.button{
+    text-align: center;
+    height: 30vh;
+    width: 300px;
+    margin: auto auto;
+    border-style: dashed;
+    border-width: 5px;
+    font-family: inherit;
+}
+
+.button > button{
+    height: 10vh;
+    width: 200px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: aliceblue;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 150px;
+    border-color: black;
+    margin: 8vh auto 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+}
+
+#content{
+    display: flex;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    margin: 10px auto;
+    font-size: 15px;
+    background-color: aliceblue;
+    border-style: solid;
+}
+#content > p{
+    margin: auto auto;
+}
+
+@media all and (max-height: 600px){
+   .button{
+        height: 50vh;
+    }
+    .button > button{
+        height: 20vh;
+    }
+}
+
+@media only screen 
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3) {
+    .button{
+        width: 80vw;
+        height: 40vh;
+        border-width: 15px;
+    }
+    .button > button{
+        height: 300px;
+        width: 70vw;
+        font-size: 50px;
+        border-width: 10px;
+    }
+    #content{
+        height: 150px;
+        width: 50vw;
+        font-size: 50px;
+        margin: 80px auto;
+        border-width: 10px;
+    }
+}
